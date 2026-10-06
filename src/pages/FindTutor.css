@@ -1,0 +1,1004 @@
+/* =========================================
+   FIND TUTOR PAGE
+   Simple • Clean • Professional
+========================================= */
+
+.find-tutor-page {
+  min-height: 100vh;
+  background: #f7f9fc;
+  padding: 45px 6%;
+  color: #172033;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.find-tutor-header {
+  max-width: 850px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.tutor-page-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  border-radius: 30px;
+  background: #eef5ff;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.find-tutor-header h1 {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.6px;
+}
+
+.find-tutor-header p {
+  max-width: 680px;
+  margin: 10px auto 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   SEARCH BAR
+========================================= */
+
+.tutor-search-section {
+  max-width: 1250px;
+  margin: 0 auto 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 8px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  box-shadow: 0 6px 22px rgba(15, 23, 42, 0.06);
+
+  transition: 0.25s ease;
+}
+
+.search-box:focus-within {
+  border-color: #93c5fd;
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.07),
+    0 0 0 3px rgba(37, 99, 235, 0.07);
+}
+
+.search-icon {
+  margin-left: 10px;
+  color: #64748b;
+  font-size: 18px;
+}
+
+.search-box input {
+  flex: 1;
+  min-width: 0;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  padding: 13px 8px;
+
+  color: #111827;
+  font-size: 14px;
+}
+
+.search-box input::placeholder {
+  color: #9ca3af;
+}
+
+.search-box button {
+  border: none;
+  outline: none;
+
+  padding: 12px 22px;
+
+  background: #2563eb;
+  color: white;
+
+  border-radius: 9px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.search-box button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   FILTER AREA
+========================================= */
+
+.tutor-content {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: block;
+}
+
+.filter-card {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px;
+  margin-bottom: 22px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+/* =========================================
+   FILTER HEADER
+========================================= */
+
+.filter-header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  white-space: nowrap;
+}
+
+.filter-header h3 {
+  margin: 0;
+
+  color: #111827;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.filter-icon {
+  color: #2563eb;
+  font-size: 17px;
+}
+
+/* =========================================
+   INDIVIDUAL FILTER
+========================================= */
+
+.filter-group {
+  flex: 1;
+  min-width: 120px;
+}
+
+.filter-group label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #6b7280;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.filter-group select {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 9px 10px;
+
+  background: #f9fafb;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  outline: none;
+
+  color: #374151;
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.filter-group select:hover {
+  border-color: #bfdbfe;
+  background: #ffffff;
+}
+
+.filter-group select:focus {
+  border-color: #60a5fa;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.06);
+}
+
+/* =========================================
+   FILTER SUMMARY
+========================================= */
+
+.filter-summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  white-space: nowrap;
+
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.reset-filter {
+  border: 1px solid #e5e7eb;
+
+  background: #ffffff;
+  color: #ef4444;
+
+  padding: 9px 12px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.reset-filter:hover {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+/* =========================================
+   RESULTS HEADER
+========================================= */
+
+.results-header {
+  max-width: 1250px;
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.results-label {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sort-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.sort-wrapper span {
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sort-select {
+  padding: 8px 11px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  color: #374151;
+
+  font-size: 12px;
+
+  outline: none;
+  cursor: pointer;
+}
+
+/* =========================================
+   TUTOR LIST
+   3 CARDS PER ROW
+========================================= */
+
+.tutor-list {
+  max-width: 1250px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+/* =========================================
+   TUTOR CARD
+========================================= */
+
+.tutor-card {
+  position: relative;
+
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+
+  transition: 0.25s ease;
+}
+
+.tutor-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #cbd5e1;
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.10);
+}
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.tutor-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #f0f2f5;
+}
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.tutor-avatar {
+  width: 54px;
+  height: 54px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* =========================================
+   TUTOR INFO
+========================================= */
+
+.tutor-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.tutor-name-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-bottom: 3px;
+}
+
+.tutor-name-row h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 17px;
+  font-weight: 750;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.verified-icon {
+  flex-shrink: 0;
+
+  color: #2563eb;
+  font-size: 15px;
+}
+
+.tutor-role {
+  margin: 0 0 7px;
+
+  color: #6b7280;
+
+  font-size: 12px;
+}
+
+.tutor-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 12px;
+}
+
+.stars {
+  color: #f59e0b;
+  letter-spacing: 1px;
+}
+
+.tutor-rating strong {
+  color: #374151;
+}
+
+.tutor-rating span:last-child {
+  color: #9ca3af;
+}
+
+/* =========================================
+   VERIFIED BADGE
+========================================= */
+
+.verified-badge {
+  position: absolute;
+
+  top: 17px;
+  right: 17px;
+
+  padding: 4px 8px;
+
+  border-radius: 20px;
+
+  background: #ecfdf5;
+  color: #059669;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+/* =========================================
+   SAVE BUTTON
+========================================= */
+
+.save-button {
+  position: absolute;
+
+  top: 52px;
+  right: 17px;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e5e7eb;
+
+  background: #ffffff;
+
+  color: #64748b;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.save-button:hover {
+  color: #ef4444;
+
+  border-color: #fecaca;
+
+  background: #fff7f7;
+}
+
+.save-button.saved {
+  color: #ef4444;
+
+  background: #fff1f2;
+
+  border-color: #fecdd3;
+}
+
+/* =========================================
+   DETAIL BOXES
+========================================= */
+
+.tutor-details {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 8px;
+
+  margin-top: 15px;
+}
+
+.detail-item {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 9px;
+
+  background: #f8fafc;
+
+  border: 1px solid #eef2f7;
+
+  border-radius: 9px;
+
+  transition: 0.2s ease;
+}
+
+.detail-item:hover {
+  background: #f1f5f9;
+  border-color: #dbeafe;
+}
+
+.detail-icon {
+  width: 27px;
+  height: 27px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 13px;
+}
+
+.detail-item div {
+  min-width: 0;
+}
+
+.detail-item small {
+  display: block;
+
+  margin-bottom: 2px;
+
+  color: #9ca3af;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.detail-item strong {
+  display: block;
+
+  color: #374151;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.tutor-description {
+  margin: 14px 0 0;
+
+  color: #6b7280;
+
+  font-size: 12px;
+  line-height: 1.6;
+
+  display: -webkit-box;
+
+  /* Standard property */
+  line-clamp: 2;
+
+  /* WebKit compatibility */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+/* =========================================
+   TAGS
+========================================= */
+
+.tutor-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin-top: 13px;
+}
+
+.tutor-tags span {
+  padding: 5px 9px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* =========================================
+   PRICE BOX
+========================================= */
+
+.price-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 16px;
+  padding: 11px 12px;
+
+  background: #f8fafc;
+
+  border: 1px solid #eef2f7;
+
+  border-radius: 9px;
+}
+
+.price-box span {
+  color: #6b7280;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.price-box strong {
+  color: #111827;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.price-box small {
+  color: #9ca3af;
+  font-size: 9px;
+}
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.tutor-actions {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 7px;
+
+  margin-top: 12px;
+}
+
+.tutor-actions a,
+.tutor-actions button {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 9px 7px;
+
+  border-radius: 8px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+/* =========================================
+   VIEW PROFILE
+========================================= */
+
+.view-profile-btn {
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  border: 1px solid #dbeafe;
+}
+
+.view-profile-btn:hover {
+  background: #dbeafe;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   HIRE
+========================================= */
+
+.hire-tutor-btn {
+  border: 1px solid #2563eb;
+
+  background: #2563eb;
+
+  color: white;
+}
+
+.hire-tutor-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-tutor-btn {
+  border: 1px solid #e5e7eb;
+
+  background: #ffffff;
+
+  color: #374151;
+}
+
+.contact-tutor-btn:hover {
+  background: #f8fafc;
+
+  border-color: #cbd5e1;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   NO RESULTS
+========================================= */
+
+.no-results {
+  grid-column: 1 / -1;
+
+  padding: 60px 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+}
+
+.no-results-icon {
+  font-size: 35px;
+
+  margin-bottom: 10px;
+}
+
+.no-results h3 {
+  margin: 0 0 6px;
+
+  color: #111827;
+
+  font-size: 18px;
+}
+
+.no-results p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 13px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+  .find-tutor-page {
+    padding: 40px 4%;
+  }
+
+  .tutor-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .filter-card {
+    flex-wrap: wrap;
+  }
+
+  .filter-header {
+    width: 100%;
+  }
+
+  .filter-group {
+    min-width: 160px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .find-tutor-page {
+    padding: 30px 18px;
+  }
+
+  .find-tutor-header h1 {
+    font-size: 29px;
+  }
+
+  .find-tutor-header p {
+    font-size: 13px;
+  }
+
+  .search-box {
+    padding: 7px;
+  }
+
+  .search-box button {
+    padding: 11px 14px;
+  }
+
+  .filter-card {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    padding: 12px;
+  }
+
+  .filter-header {
+    grid-column: 1 / -1;
+  }
+
+  .filter-group {
+    min-width: 0;
+  }
+
+  .filter-summary {
+    grid-column: 1 / -1;
+
+    justify-content: space-between;
+  }
+
+  .results-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .sort-wrapper {
+    width: 100%;
+  }
+
+  .sort-select {
+    flex: 1;
+  }
+
+  .tutor-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .find-tutor-page {
+    padding: 25px 14px;
+  }
+
+  .find-tutor-header h1 {
+    font-size: 25px;
+  }
+
+  .search-box {
+    flex-wrap: wrap;
+  }
+
+  .search-icon {
+    margin-left: 8px;
+  }
+
+  .search-box input {
+    flex: 1;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+
+  .filter-card {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-header,
+  .filter-summary {
+    grid-column: auto;
+  }
+
+  .tutor-card {
+    padding: 16px;
+  }
+
+  .tutor-details {
+    grid-template-columns: 1fr;
+  }
+
+  .tutor-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .tutor-actions a,
+  .tutor-actions button {
+    padding: 10px;
+  }
+}
