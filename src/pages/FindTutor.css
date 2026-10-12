@@ -1002,3 +1002,307 @@
     padding: 10px;
   }
 }
+/* =========================================
+   EDUCONNECT VIDEO TUTOR FEATURE
+   Paste these styles at the END of FindTutor.css
+========================================= */
+
+/* Make room for the extra teaching-mode filter */
+.filter-card {
+  flex-wrap: wrap;
+}
+
+.filter-card .filter-header {
+  flex-shrink: 0;
+}
+
+/* Online / video tutor label */
+.online-video-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 10px;
+  padding: 6px 10px;
+  border: 1px solid #a7f3d0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+  color: #047857;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+/* Keep action buttons balanced with the new Watch Intro button */
+.tutor-actions {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tutor-actions a,
+.tutor-actions button {
+  min-height: 38px;
+  box-sizing: border-box;
+  gap: 5px;
+}
+
+.watch-intro-btn {
+  border: 1px solid #c4b5fd;
+  background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+  color: #6d28d9;
+  box-shadow: 0 3px 9px rgba(109, 40, 217, 0.08);
+}
+
+.watch-intro-btn:hover {
+  border-color: #a78bfa;
+  background: linear-gradient(135deg, #ede9fe, #ddd6fe);
+  box-shadow: 0 7px 16px rgba(109, 40, 217, 0.14);
+  transform: translateY(-2px);
+}
+
+.watch-intro-btn:focus-visible,
+.video-intro-close:focus-visible,
+.video-intro-done:focus-visible {
+  outline: 3px solid rgba(124, 58, 237, 0.28);
+  outline-offset: 3px;
+}
+
+/* Introduction video preview modal */
+.video-intro-overlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(7px);
+  animation: videoOverlayIn 0.2s ease-out;
+}
+
+.video-intro-modal {
+  position: relative;
+  width: min(100%, 520px);
+  max-height: min(90vh, 760px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 25px 80px rgba(2, 6, 23, 0.32);
+  animation: videoModalIn 0.24s ease-out;
+}
+
+.video-intro-close {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  right: 13px;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.58);
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.video-intro-close:hover {
+  background: #dc2626;
+  transform: rotate(90deg);
+}
+
+.video-intro-screen {
+  position: relative;
+  display: flex;
+  min-height: 230px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 15px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(96, 165, 250, 0.45), transparent 34%),
+    radial-gradient(circle at 80% 80%, rgba(167, 139, 250, 0.42), transparent 35%),
+    linear-gradient(135deg, #172554, #312e81 55%, #6d28d9);
+  color: #ffffff;
+  text-align: center;
+}
+
+.video-intro-screen::before,
+.video-intro-screen::after {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+  content: '';
+}
+
+.video-intro-screen::before {
+  top: -105px;
+  left: -55px;
+}
+
+.video-intro-screen::after {
+  right: -70px;
+  bottom: -125px;
+  width: 260px;
+  height: 260px;
+}
+
+.video-intro-play {
+  display: grid;
+  width: 66px;
+  height: 66px;
+  place-items: center;
+  padding-left: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  color: #ffffff;
+  font-size: 24px;
+  backdrop-filter: blur(8px);
+}
+
+.video-intro-screen p {
+  margin: 15px 0 4px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.video-intro-screen small {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+}
+
+.video-intro-modal h2 {
+  margin: 20px 0 6px;
+  color: #111827;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.video-intro-modal > p {
+  margin: 6px 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.video-intro-modal .video-intro-note {
+  margin-top: 15px;
+  padding: 12px 14px;
+  border: 1px solid #e0e7ff;
+  border-radius: 10px;
+  background: #f5f7ff;
+  color: #4b5563;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.video-intro-done {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px 16px;
+  border: 1px solid #4f46e5;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.video-intro-done:hover {
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.22);
+  transform: translateY(-1px);
+}
+
+@keyframes videoOverlayIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes videoModalIn {
+  from { opacity: 0; transform: translateY(12px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (max-width: 1050px) {
+  .filter-card {
+    align-items: stretch;
+  }
+
+  .filter-card .filter-header {
+    width: 100%;
+  }
+
+  .filter-card .filter-group {
+    flex: 1 1 170px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tutor-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .watch-intro-btn {
+    grid-column: 1 / -1;
+  }
+
+  .video-intro-modal {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .video-intro-screen {
+    min-height: 190px;
+  }
+
+  .video-intro-modal h2 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tutor-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .watch-intro-btn {
+    grid-column: auto;
+  }
+
+  .video-intro-overlay {
+    padding: 12px;
+  }
+
+  .video-intro-screen {
+    min-height: 170px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .video-intro-overlay,
+  .video-intro-modal {
+    animation: none;
+  }
+
+  .watch-intro-btn,
+  .video-intro-close,
+  .video-intro-done {
+    transition: none;
+  }
+}
